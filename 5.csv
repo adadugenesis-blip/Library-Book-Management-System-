@@ -1,0 +1,4 @@
+borrow_id,member_id,book_id,borrow_date,return_date
+1,101,1,2024-01-10,2024-01-20
+2,102,2,2024-01-15,NULL
+3,103,3,2024-01-18,2024-01-28

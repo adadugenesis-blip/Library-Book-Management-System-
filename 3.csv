@@ -1,0 +1,5 @@
+book_id,title,author,category,published_year,copies_available
+1,"database systems","thomas connolly",technology,2019,5
+2,"Clean code","Robert Martin",programming,2018,3
+3,"introduction to economics","Paul samuelson",economics,2016,4
+4,"discrete mathematics","kenneth Rosen",mathematics,2020,2
