@@ -25,22 +25,24 @@ This project aims to solve these problems by building a structured and normalize
 ## 📋 Project Questions / Tasks
 
 ### 1️⃣ Database Model
-- Explain why the relational database model is suitable for a library management system.  
-- Discuss how tables, primary keys, and foreign keys help maintain data integrity.  
+- relational database model is suitable for a library management system because its best for structures data and clear relationships and integrity rules   
+-  ## 🔐 Data Integrity 
+- Tables organize data properly and reduce duplication.
+- Primary keys identify each record (no duplicates, no NULLs).
+- Foreign keys shows relationships between tables.
+- Together, they ensure accurate, consistent, and reliable data.
 
 ---
 
 ### 2️⃣ Entities, Relationships, and Attributes
-- Identify the main entities in the library system.  
-- Define their attributes and relationships.  
-- Draw an ER diagram showing all relationships clearly.  
-
+- Entities are :- BOOKS, MEMBERS AND BORROWINGS
+- Relationships :- Borrows i.e One Member can borrow many books and One Book can be borrowed many times.
+- Attributes :- Attributes are Borrow_id(primary key) , member_id (foreign key to members) ,book_id (foreign key to books) , borrow_date , return_date.
 ---
 
 ### 3️⃣ Normalization
 Initially, all library data (books, members, borrow details) is stored in a single table.
 
-#### Tasks:
-- Explain the problems with this design  
-- Explain why normalization is necessary  
-- Normalize the database up to **Third Normal Form (3NF)**  
+#### Tasks: 
+- Normalization is necessary because it helpes to Prevent storing the same data in multiple places, saving storage space and minimizing update errors.
+- 
