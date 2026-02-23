@@ -45,4 +45,4 @@ Initially, all library data (books, members, borrow details) is stored in a sing
 
 #### Tasks: 
 - Normalization is necessary because it helpes to Prevent storing the same data in multiple places, saving storage space and minimizing update errors.
-- 
+  
