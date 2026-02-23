@@ -36,13 +36,48 @@ This project aims to solve these problems by building a structured and normalize
 
 ### 2️⃣ Entities, Relationships, and Attributes
 - Entities are :- BOOKS, MEMBERS AND BORROWINGS
-- Relationships :- Borrows i.e One Member can borrow many books and One Book can be borrowed many times.
-- Attributes :- Attributes are Borrow_id(primary key) , member_id (foreign key to members) ,book_id (foreign key to books) , borrow_date , return_date.
+- Relationships :- Borrows i.e One Member can borrow many books and One Book can be borrowed many Members.
+
+### 1. Books
+Represents all books in the library.
+
+- **Attributes:**
+* `book_id` (Primary Key)
+* `title`
+* `author`
+* `category`
+* `published_year`
+* `copies_available`
+
 ---
+
+### 2. Members
+Represents registered library members.
+
+**Attributes:**
+* `member_id` (Primary Key)
+* `first_name`
+* `last_name`
+* `gender`
+* `phone`
+* `membership_date`
+
+---
+
+### 3. Borrowings
+Represents borrowing transactions between members and books.
+
+**Attributes:**
+* `borrow_id` (Primary Key)
+* `member_id` (Foreign Key)
+* `book_id` (Foreign Key)
+* `borrow_date`
+* `return_date`
 
 ### 3️⃣ Normalization
 Initially, all library data (books, members, borrow details) is stored in a single table.
 
 #### Tasks: 
 - Normalization is necessary because it helpes to Prevent storing the same data in multiple places, saving storage space and minimizing update errors.
+- this help to reduce Redundancy
   
